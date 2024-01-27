@@ -1,5 +1,6 @@
 package net.aidan.firstmod;
 
+import net.aidan.firstmod.item.ModItemGroups;
 import net.aidan.firstmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -14,6 +15,7 @@ public class FirstMod implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("Hello, Fabric World!");
 
+		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 	}
 }
